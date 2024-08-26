@@ -11,10 +11,11 @@ function App() {
   return (
     <div>
       <NavBar />
-      <Home />
-      <About />
+      <Home name={user.name} bio={user.bio}/>
+      <About bio={user.bio} github={user.github} linkedin={user.linkedin}/>
     </div>
   );
 }
+
 
 export default App;
